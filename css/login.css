@@ -94,4 +94,11 @@ h4 {
   .login .loginBtn {
     background-color: #00183A; }
 
+.controls {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center; }
+  .controls .btn-danger {
+    margin-top: 20px; }
+
 /*# sourceMappingURL=login.css.map */

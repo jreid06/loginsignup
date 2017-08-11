@@ -14,17 +14,20 @@
 		}
 	}
 
-	//function to check if suer is logged in
+	//function to check if user is logged in
 
 	function logged_in(){
-
 		// if user is logged in return value
-		if (isset($_SESSION['email'])) {
+		if (isset($_SESSION['email']) || isset($_COOKIE['email'])) {
 			return true;
 		}
 		else {
 			return false;
 		}
+	}
+
+	function returnUserName($name){
+		return $name;
 	}
 
  ?>

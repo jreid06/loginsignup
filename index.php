@@ -1,3 +1,15 @@
+<?php
+
+include('dbconnect.php');
+include('functions.php');
+
+if (logged_in()) {
+	header("location: home.php");
+	exit();
+}
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -94,6 +106,9 @@
 									<input class="homeLoginInput" type="email" name="loginEmail" value="" placeholder="Enter your email address ..">
 									<label>Password</label>
 									<input class="homeLoginInput" type="password" name="passwordLogin" value="" placeholder="Last Name ..">
+
+									<label for="">Keep me signed in</label>
+									<input type="checkbox" name="staySigned" value="">
 
 									<input class="btn btn-primary loginBtn" type="submit" name="submitLogin" value=" login">
 								</form>

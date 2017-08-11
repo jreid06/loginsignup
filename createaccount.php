@@ -27,6 +27,8 @@
         $password = $_POST['password'];
         $confirmpass = $_POST['confirmPass'];
 
+		// returnUserName($firstname);
+
         if (strLen($firstname) < 3) {
             $fnameerror = 'First Name must be more than 3 characters!!';
 		}
