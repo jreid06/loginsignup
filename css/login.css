@@ -1,0 +1,97 @@
+body,
+html {
+  font-family: 'Cabin', sans-serif;
+  height: 100%;
+  width: 100%; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Droid Sans', sans-serif; }
+
+.btn-primary {
+  background-color: #C9994A;
+  border: 1px solid #C9994A;
+  box-shadow: 0 0 10px #FFFFFF; }
+  .btn-primary:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #C9994A; }
+
+.jumbotron {
+  height: 100%;
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: scroll; }
+  .jumbotron .left-register {
+    background-color: #050C27;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .jumbotron .left-register {
+        width: 65%; } }
+  .jumbotron .right-login {
+    background-color: #C9994A;
+    width: 100%;
+    height: 100%; }
+    @media only screen and (min-width: 768px) {
+      .jumbotron .right-login {
+        width: 35%; } }
+
+.signup {
+  background-color: #050C27;
+  height: 100%; }
+  .signup .homeSignupForm {
+    width: 60%;
+    margin: 10px auto;
+    padding: 0; }
+    @media only screen and (min-width: 768px) {
+      .signup .homeSignupForm {
+        margin: 120px auto; } }
+    .signup .homeSignupForm label {
+      color: #FFFFFF;
+      font-size: 2rem;
+      padding: 10px; }
+  .signup .homeInput {
+    padding: 5px 10px 5px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 2px solid #C9994A;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 0 10px #FFFFFF; }
+
+.error_message {
+  color: red;
+  font-weight: bold;
+  font-size: 14px; }
+
+.success_message {
+  color: forestgreen;
+  font-weight: bold;
+  font-size: 14px; }
+
+.login {
+  height: 100%; }
+  .login .homeLoginForm {
+    width: 60%;
+    margin: 290px auto auto;
+    padding: 0; }
+    .login .homeLoginForm label {
+      color: #FFFFFF;
+      font-size: 2rem;
+      padding: 10px; }
+  .login .homeLoginInput {
+    padding: 5px 10px 5px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 2px solid #C9994A;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 0 10px #FFFFFF; }
+  .login .loginBtn {
+    background-color: #00183A; }
+
+/*# sourceMappingURL=login.css.map */

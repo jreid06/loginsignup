@@ -1,0 +1,206 @@
+$darknavyblue: #050C27;
+$darkblue: #0B1026;
+$deepseablue: #00183A;
+$white: #FFFFFF;
+$oldgold: #C9994A;
+
+// Media Query Breakpoints
+$xs: 0;
+$sm-break: '(min-width: 576px)';
+$md-break: '(min-width: 768px)';
+$lg-break: '(min-width: 992px)';
+$xl-break: '(min-width: 1200px)';
+$xll-break: '(min-width: 1400px)';
+$sm-break-max: '(max-width: 767px)';
+$md-break-max: '(max-width: 991px)';
+$lg-break-max: '(max-width: 1199px)';
+
+$largephones: '(min-width: 400px)';
+
+@mixin respond-to($media) {
+	 @media only screen and #{$media}{
+		@content;
+	}
+}
+
+body,
+html {
+	font-family: 'Cabin', sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.btn-primary {
+	background-color: $oldgold;
+	border: 1px solid $oldgold;
+	box-shadow: 0 0 10px $white;
+
+	&:hover {
+		background-color: $white;
+		border: 1px solid $oldgold;
+	}
+}
+
+.jumbotron {
+	height: 100%;
+	padding: 0;
+	margin-bottom: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: scroll;
+
+	.left-register {
+		background-color: $darknavyblue;
+		width: 100%;
+		@include respond-to ($md-break){
+			width: 65%;
+		}
+
+		// height: 100%;
+	}
+
+	.right-login {
+		background-color: $oldgold;
+		width: 100%;
+
+		@include respond-to ($md-break){
+			width: 35%;
+		}
+		height: 100%;
+	}
+}
+
+.signup {
+	background-color: $darknavyblue;
+	height: 100%;
+
+	.homeSignupForm {
+		width: 60%;
+		// height: 00px;
+		@include respond-to ($md-break){
+				margin: 120px auto;
+		};
+		margin: 10px auto;
+		padding: 0;
+		// border:2px solid red;
+		label {
+			color: $white;
+			font-size: 2rem;
+			padding: 10px;
+		}
+	}
+
+	.homeInput {
+		padding: 5px 10px 5px 20px;
+		border-radius: 10px;
+		margin-bottom: 25px;
+		border: 2px solid $oldgold;
+		display: inline-block;
+		width: 100%;
+		box-shadow: 0 0 10px $white;
+	}
+}
+
+.error_message {
+	color: red;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.success_message {
+	color: forestgreen;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.login {
+	// background-color: $darknavyblue;
+	height: 100%;
+
+	.homeLoginForm {
+		width: 60%;
+		// height: 00px;
+		margin: 290px auto auto;
+		padding: 0;
+		// border:2px solid red;
+		label {
+			color: $white;
+			font-size: 2rem;
+			padding: 10px;
+		}
+	}
+
+	.homeLoginInput {
+		padding: 5px 10px 5px 20px;
+		border-radius: 10px;
+		margin-bottom: 25px;
+		border: 2px solid $oldgold;
+		display: inline-block;
+		width: 100%;
+		box-shadow: 0 0 10px $white;
+	}
+
+	.loginBtn{
+		background-color: $deepseablue;
+	}
+}
+// .signup{
+// 	float: left;
+// 	width: 70%;
+// 	border: 1px solid $darknavyblue;
+// 	background-color: $darknavyblue;
+// 	height: 100%;
+//
+// 	.homeSignupForm{
+// 		width: 40%;
+// 		// height: 00px;
+// 		margin: 60px auto;
+// 		padding: 0;
+// 		// border:2px solid red;
+//
+// 		label{
+// 			color: $white;
+// 			font-size: 2rem;
+// 			padding: 10px;
+// 		}
+// 	}
+//
+// 	.error_message{
+// 		color: red;
+// 		font-weight: bold;
+// 		font-size: 14px;
+// 	}
+//
+// 	.success_message{
+// 		color: forestgreen;
+// 		font-weight: bold;
+// 		font-size: 14px;
+// 	}
+//
+// 	.homeInput{
+// 		padding: 5px 10px 5px 20px;
+// 		border-radius: 10px;
+// 		margin-bottom: 25px;
+// 		border: 2px solid $oldgold;
+// 		display: inline-block;
+// 		width: 100%;
+// 		box-shadow: 0 0 10px $white;
+// 	}
+// }
+//
+// .login{
+// 	float: right;
+// 	width: 30%;
+// 	border: 1px solid $deepseablue;
+// 	background-color: $oldgold;
+// 	height: 100%;
+//
+// }
